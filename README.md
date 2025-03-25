@@ -11,7 +11,7 @@
 </p>
 
 - 🌱 Currently exploring **Next.js and React Native** for continuous learning.
-- 💬 Let's talk about **React, JavaScript, TypeScript** and Data Structures & Algorithms.
+- 💬 Let's talk about **React, JavaScript, TypeScript**, and Data Structures & Algorithms.
 - 📫 How to reach me: **ashuvinayak1508@gmail.com**
 - 🌟 Always eager to dive into the latest innovations and take on exciting new projects!
 
@@ -28,6 +28,8 @@
   </a>
 </p>
 
+---
+
 ## 💻 Tech Stack
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) 
@@ -40,19 +42,36 @@
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-<!-- Add more badges as needed -->
+
+<!-- Add or remove any other badges you like -->
 
 ---
 
-## Latest Activity
+## 📊 GitHub Stats
 
-This section displays dynamic GitHub stats for commits and pull requests for today, this month, and this year. The data is updated daily via GitHub Actions.
+<p>
+  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ashutosh-kumar-incresco&show_icons=true&locale=en&layout=compact" alt="ashutosh-kumar-incresco" />
+</p>
+
+<p>&nbsp;
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=ashutosh-kumar-incresco&show_icons=true&locale=en" alt="ashutosh-kumar-incresco" />
+</p>
+
+<p>
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ashutosh-kumar-incresco&" alt="ashutosh-kumar-incresco" />
+</p>
+
+---
+
+## Latest Activity (Dynamic Stats)
+
+This section will display dynamic GitHub stats for commits and pull requests for **today**, **this month**, and **this year**. The data is updated daily via GitHub Actions.
 
 <!-- Begin GitHub Stats -->
 <!-- The content below is automatically updated by the GitHub Action -->
 <!-- Do not modify this section manually -->
 
-<!-- The stats.md file content will be inserted here automatically during the workflow run -->
+*(Stats will appear below once the workflow runs.)*
 
 <!-- End GitHub Stats -->
 
@@ -60,11 +79,23 @@ This section displays dynamic GitHub stats for commits and pull requests for tod
 
 ## Setup for Dynamic Stats
 
-To automatically update these stats, this repository includes a GitHub Action and a Node.js script.
+To automatically update the **Latest Activity** section, this repository includes:
+
+1. A GitHub Actions workflow:  
+   **File:** `.github/workflows/update-stats.yml`
+
+2. A Node.js script to query the GitHub API:  
+   **File:** `update-stats.js`
+
+When the workflow runs (daily at midnight UTC by default), it will:
+- Fetch the number of commits and pull requests for the current day, month, and year.
+- Update a file named `stats.md`.
+- Inject the contents of `stats.md` into the **Latest Activity** section above.
 
 ### 1. GitHub Action Workflow
 
-Create a file at `.github/workflows/update-stats.yml` with the following content:
+Create (or update) the file at:  
+`.github/workflows/update-stats.yml`
 
 ```yaml
 name: Update Stats
